@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ez Vibe's Clothing</title>
-    <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/pindex.css" rel="stylesheet">
 </head>
 <body>
     <div id="homepage">
-        <h1>Ez Vibe's</h1>
+        <img src="images/Ecvibeslogo.png" alt="Ec Vibes Logo" class="logo">
         <button type="button">
             <img src="">
             Account
@@ -27,27 +27,49 @@
         <div id="popular">
             <h2>Popular</h2>
             <ul>
-                <li><img src="images/red_shirt.png" width="150" height="200">Red Shirt</li>
-                <li><img src="images/red_pants.png" width="150" height="200">Red Pants</li>
-                <li><img src="images/blue_shirt.png" width="150" height="200">Blue Shirt</li>
-                <li><img src="images/blue_pants.png" width="150" height="200">Blue Pants</li>
-                <li><img src="images/green_shirt.png" width="150" height="200">Green Shirt</li>
-                <li><img src="images/green_pants.png" width="150" height="200">Green Pants</li>
+                <li id="red-shirt" class="product-item">
+                    <img src="images/red_shirt.png" width="150" height="200">
+                    <div>Red Shirt</div>
+                </li>
+                <li id="red-pants" class="product-item">
+                    <img src="images/red_pants.png" width="150" height="200">
+                    <div>Red Pants</div>
+                </li>
+                <li id="blue-shirt" class="product-item">
+                    <img src="images/blue_shirt.png" width="150" height="200">
+                    <div>Blue Shirt</div>
+                </li>
+                <li id="blue-pants" class="product-item">
+                    <img src="images/blue_pants.png" width="150" height="200">
+                    <div>Blue Pants</div>
+                </li>
+                <li id="green-shirt" class="product-item">
+                    <img src="images/green_shirt.png" width="150" height="200">
+                    <div>Green Shirt</div>
+                </li>
+                <li id="green-pants" class="product-item">
+                    <img src="images/green_pants.png" width="150" height="200">
+                    <div>Green Pants</div>
+                </li>
             </ul>
         </div>
-        <div id="seasons">
-            <button type="button">
-                <img src="images/winter_clothing.png">
-                Winter
-            </button>
-            <p>Need something warmer for yourself or someone that you know, check out our collection of Winter clothes</p>
-            <br>
-            <button type="button">
-                <img src="images/summer_clothing.png">
-                summer
-            </button>
-            <p>If you want to show off your Summer body or maybe just need some stylish clothes for that trip to the tropics nothing will have you looking better than our summer collection</p>
-        </div>
+            <div id="seasons">
+                <div id="winter-box" class="season-item">
+                    <button type="button">
+                        <img src="images/winter_clothing.png">
+                        Winter
+                    </button>
+                    <p>Need something warmer for yourself or someone that you know, check out our collection of Winter clothes</p>
+                </div>
+
+                <div id="summer-box" class="season-item">
+                    <button type="button">
+                        <img src="images/summer_clothing.png">
+                        Summer
+                    </button>
+                    <p>If you want to show off your Summer body or maybe just need some stylish clothes for that trip to the tropics nothing will have you looking better than our summer collection</p>
+                </div>
+            </div>
     </div>
 </body>
 </html>
