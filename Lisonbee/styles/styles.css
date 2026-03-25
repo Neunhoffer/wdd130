@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #414833;
+    color: #EBE3D2;
+    margin: 0;
+}
+
+body, p, a {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700; 
+    text-transform: uppercase;
+    color: #CCBFA3;
+}
+
+#homepageslide_images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;      
+    max-width: 1200px; 
+    margin: 40px auto; 
+}
+
+.site-banner {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    background-color: #1a1a19;      
+    padding: 10px 5%;               
+    margin-bottom: 30px;
+    border-bottom: 2px solid #000000;
+}
+
+#heroimage img {
+    height: 60px; 
+    width: auto;  
+    display: block;
+}
+
+.main-nav {
+    display: flex;
+    gap: 15px; 
+}
+
+.main-nav a {
+    color: #CCBFA3;
+    text-decoration: none;
+    font-family: 'Consolas', monospace;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.carousel-window {
+    display: flex;
+    overflow: hidden;       
+    scroll-snap-type: x mandatory; 
+    width: 800px;           
+    margin: 0 auto;
+}
+
+.carousel-window img {
+    width: 100%;            
+    flex-shrink: 0;        
+    object-fit: cover;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: #A4AC86;
+}
+
+.arrow:hover {
+    color: #EBE3D2;
+}
+
+#landmark_images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    width: 200px;
+    height: 200px;
+}
+
+#landmark_images img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+#carousel_description{
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    color: #EBE3D2;
+}
+
+.split-section {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+#landmark-carousel-container {
+    display: flex;
+    flex-direction: column; 
+    width: 50%; 
+}
+
+#landmark-carousel-container h2 {
+    margin-left: 100px; 
+    margin-bottom: 10px;
+    color: #CCBFA3; 
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.small-window {
+    width: 100% !important; 
+    aspect-ratio: 1 / 1;    
+}
+
+#signupbox {
+    width: 40%;
+    align-self: flex-end;
+    padding: 40px;
+    background-color: #1a1a19; 
+    color: #CCBFA3;
+    border-radius: 10px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#signupbox h3 {
+    margin-top: 0;
+    color: #CCBFA3;
+}
+
+.signup-button {
+    display: inline-block;
+    background-color: #737A5D; 
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none; 
+    font-family: 'Consolas', monospace;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s; 
+    margin-top: 20px;
+}
+
+.signup-button:hover {
+    background-color: #A4AC86; 
+    color: #ffffff;
+}
+
+
+
+/* --- LANDMARKS PAGE ONLY --- */
+.lm-container {
+    width: 95% !important;
+    max-width: 1200px !important;
+    margin: 40px auto !important;
+    overflow: hidden !important;
+}
+
+#lm-track {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important; 
+    overflow: hidden !important;
+    width: 100% !important;
+    scroll-behavior: smooth;
+}
+
+.lm-slide {
+    flex: 0 0 100% !important; 
+    width: 100% !important;
+    display: block !important;
+}
+
+.lm-image-row {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 15px !important;
+    width: 100% !important;
+}
+
+.lm-img-box {
+    width: 50% !important; 
+    flex: 1 !important;
+    color: #CCBFA3 !important;
+}
+
+.lm-img-box img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    object-fit: cover !important;
+}
+
+.lm-description {
+    background-color: #1a1a19 !important;
+    padding: 20px !important;
+    margin-top: 15px !important;
+    border: 1px solid #737A5D !important;
+    line-height: 1.8;
+    color: #CCBFA3 !important;
+}
+
+
+
+/* --- REGISTRATION PAGE --- */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.reg-box {
+    background-color: #333928;
+    border: 1px solid #737A5D;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+}
+
+.reg-box h2 {
+    color: #CCBFA3 !important; 
+    margin-top: 0;
+}
+
+.reg-box p {
+    color: #EBE3D2;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.reg-box label {
+    display: block;
+    color: #CCBFA3; 
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.reg-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #1a1a19; 
+    border: 1px solid #737A5D;
+    color: #EBE3D2;
+    font-family: 'Consolas', monospace;
+    box-sizing: border-box; 
+}
+
+.reg-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1a1a19;
+    color: white;
+    border: none;
+    font-family: 'Consolas', monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reg-button:hover {
+    background-color: #A4AC86;
+    color: #1a1a19;
+}

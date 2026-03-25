@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register - The Last of Us Study</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <a href="home.html">Home</a>
-    <button type="submit">Register</button>
-    <form>
-        <button type="submit">Create Account</button>
-    </form>
-    <p>
-    Create Your Account
-    Join our exploration of environmental design in The Last of Us Part II. 
-    Registering allows you to participate in our community forums, bookmark specific Seattle location studies, and receive notifications when we add new side-by-side visual comparisons.
-    Sign up to start your journey through the overgrown city.
-    </p>
+    <header class="site-banner">
+        <div id="heroimage"><img src="Lisonbee_images/Logo.png" alt="Logo"></div>
+        <nav class="main-nav">
+            <a href="home.html">Home</a>
+            <a href="landmarks.html">Landmarks</a>
+            <a href="signup.html">Signup</a>
+        </nav>
+    </header>
+
+    <div class="registration-container">
+        <div class="reg-box">
+            <h2>Create Your Account</h2>
+            <p>Join our exploration of environmental design in The Last of Us Part II. Registering allows you to participate in community forums and bookmark Seattle location studies.</p>
+            
+            <form>
+                <label for="username">Survivor Name</label>
+                <input type="text" id="username" placeholder="Enter Name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Email@example.com">
+
+                <button type="submit" class="reg-button">Create Account</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

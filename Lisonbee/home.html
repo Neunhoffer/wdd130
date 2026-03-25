@@ -4,38 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
     <div id="Home_page">
-        <a href="landmarks.html">Home</a>
-        <div id="heroimage">
-            <img src="Lisonbee_images/Logo.png">
-        </div>
-        <div id="homepageslide_images">
+        <header class="site-banner">
+            <div id="heroimage">
+                <img src="Lisonbee_images/Logo.png" alt="Logo">
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="landmarks.html">Landmarks</a>
+                <a href="signup.html">Signup</a>
+            </nav>
+        </header>
+    <div id="homepageslide_images">
+        <button class="arrow prev" onclick="document.querySelector('.carousel-window').scrollBy({left: -document.querySelector('.carousel-window').clientWidth, behavior: 'smooth'})">&#10094;</button>
+        
+        <div class="carousel-window">
             <img src="Lisonbee_images/headerphoto1.jpg">
             <img src="Lisonbee_images/headerphoto2.jpg">
             <img src="Lisonbee_images/headerphoto3.jpg">
         </div>
-        <p>
-            This website explores the environmental design of The Last of Us
-            Part II and how the developers transformed downtown Seattle into
-            a haunting post-apocalyptic world. By comparing real Seattle
-            landmarks with their in-game counterparts, the site highlights how
-            architecture, weather, and overgrown nature were used to create an
-            immersive and believable environment. Through images and
-            background information, visitors can see how thoughtful design
-            helps tell the story and shape the emotional tone of the game.
-        </p>
-        <div id="landmarkbox">
-            <a href="landmarks.html" class="button-link">Landmarks</a>
-            <div id="landmark_images">
+
+        <button class="arrow next" onclick="document.querySelector('.carousel-window').scrollBy({left: document.querySelector('.carousel-window').clientWidth, behavior: 'smooth'})">&#10095;</button>
+    </div>
+        <div id="carousel_description">
+                <p>
+                    This website explores the environmental design of The Last of Us
+                    Part II and how the developers transformed downtown Seattle into
+                    a haunting post-apocalyptic world. By comparing real Seattle
+                    landmarks with their in-game counterparts, the site highlights how
+                    architecture, weather, and overgrown nature were used to create an
+                    immersive and believable environment. Through images and
+                    background information, visitors can see how thoughtful design
+                    helps tell the story and shape the emotional tone of the game.
+                </p>
+            </div>
+            <div class="split-section">
+    <div id="landmark-carousel-container">
+        <h2>Landmarks</h2> <div class="carousel-controls">
+            <button class="arrow prev" onclick="document.querySelector('#landmark-window').scrollBy({left: -document.querySelector('#landmark-window').clientWidth, behavior: 'smooth'})">&#10094;</button>
+            
+            <div id="landmark-window" class="carousel-window small-window">
                 <img src="Lisonbee_images/reallifeferriswheel.jpg">
                 <img src="Lisonbee_images/reallifeneedle.jpg">
                 <img src="Lisonbee_images/fishdomereallife.jpg">
+            </div>
+
+            <button class="arrow next" onclick="document.querySelector('#landmark-window').scrollBy({left: document.querySelector('#landmark-window').clientWidth, behavior: 'smooth'})">&#10095;</button>
         </div>
+    </div>
+
         <div id="signupbox">
-            <a href="signup.html" class="button-link">Signup</a>
+            <h3>Join the Survivors</h3>
+            <p>Sign up for the latest updates on Seattle's landmarks.</p>
+            <a href="signup.html" class="signup-button">Sign Up Now</a>
         </div>
+    </div>
         </div>
     </div>
 </body>
