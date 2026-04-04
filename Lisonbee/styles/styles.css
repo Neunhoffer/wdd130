@@ -302,3 +302,25 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #A4AC86;
     color: #1a1a19;
 }
+
+/* --- CLIENT REPORT PAGE --- */
+.report-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #1a1a19;
+    padding: 40px;
+    border: 1px solid #737A5D;
+}
+
+.report-container h2 {
+    border-bottom: 1px solid #737A5D;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.report-container p {
+    line-height: 1.8;
+    color: #EBE3D2;
+    font-size: 14px;
+}
